@@ -16,7 +16,7 @@ def deployApp() {
     echo 'deploying the application by docker-compose...'
     
     // def copyDocker_composeCMD = 
-    def dockerComposeCMD = 'docker compose up -d'
+    def dockerComposeCMD = 'docker-compose up -d'
     sshagent(['ec2-server']) {
         sh 'scp docker-compose.yaml ec2-user@3.25.180.251:/home/ec2-user'
         // sh 'scp docker-compose.yaml ec2-user@3.25.180.251:~/'
