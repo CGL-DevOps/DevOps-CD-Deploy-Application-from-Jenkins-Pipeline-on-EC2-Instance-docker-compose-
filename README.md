@@ -30,12 +30,16 @@ AWS, Jenkins, Docker, Linux, Git, Java, Maven, Docker Hub
 
 ###### Step 6: Create Multi-pipeline for Java project and bind it to git repository and configure the credentials for the pipeline
 
-###### Step 8: Create Dockerfile and Jenkins file for Java project
+###### Step 8: Create Dockerfile, Docker-compose.yaml file and Jenkins file for Java project
 
-###### Step 10: Update the Jenkins file on Deployment stage with Jenkins login EC2 server and run Java app as a container
+![image](image/Screenshot%202023-02-26%20at%209.36.29%20pm.png)
 
-![image](image/Screenshot%202023-02-26%20at%207.37.42%20pm.png)
+###### Step 10: Update the Jenkins file on Deployment stage with Jenkins login EC2 server, copy docker-compose file to EC2 instance and run Java app as a container by docker-compose
+
+![image](image/Screenshot%202023-02-26%20at%2010.27.05%20pm.png)
 
 ###### Step 11: Update the Jenkins ip and app running port to EC2 Instance security
 
 ![image](image/Screenshot%202023-02-26%20at%208.17.49%20pm.png)
+
+![image](image/Screenshot%202023-02-26%20at%2010.27.15%20pm.png)
