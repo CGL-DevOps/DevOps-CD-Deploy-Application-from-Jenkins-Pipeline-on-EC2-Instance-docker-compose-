@@ -43,3 +43,5 @@ AWS, Jenkins, Docker, Linux, Git, Java, Maven, Docker Hub
 ![image](image/Screenshot%202023-02-26%20at%208.17.49%20pm.png)
 
 ![image](image/Screenshot%202023-02-26%20at%2010.27.15%20pm.png)
+
+###### Step 12: Extract multiple Linux commands into a separate shell script for Improvement
