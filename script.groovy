@@ -16,11 +16,13 @@ def deployApp() {
     echo 'deploying the application by docker-compose...'
     
     // def copyDocker_composeCMD = 
-    def dockerComposeCMD = 'docker-compose up -d'
+    // def dockerComposeCMD = 'docker-compose up -d'
+    def runServerCmd = "bash ./server-cmd.sh"
     sshagent(['ec2-server']) {
         sh 'scp docker-compose.yaml ec2-user@3.25.180.251:/home/ec2-user'
         // sh 'scp docker-compose.yaml ec2-user@3.25.180.251:~/'
-        sh "ssh -o StrictHostkeyChecking=no ec2-user@3.25.180.251 ${dockerComposeCMD}"
+        sh 'scp server-cmd.sh ec2-user@3.25.180.251:/home/ec2-user'
+        sh "ssh -o StrictHostkeyChecking=no ec2-user@3.25.180.251 ${runServerCmd}"
     } 
 }
 
